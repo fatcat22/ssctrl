@@ -1,0 +1,28 @@
+# ssctrl config file
+
+# 
+# enabled = true
+
+# 
+# mode = "pac"
+
+# localPort = "1081"
+# localAddress = "127.0.0.1"
+
+# pacPort = "1082"
+# apiPort = "1083"
+
+usingServer = "myserver1"
+
+
+[servers]
+    [servers.myserver1]
+        address = "11.22.33.44"
+        port = "8088"
+        crypto = "AEAD_CHACHA20_POLY1305"
+        password = "1234abcd"
+    [servers.myserver2]
+        ip = "www.example.com"
+        port = "9099"
+        crypto = "AEAD_AES_256_GCM"
+        password = "examplepwd"
