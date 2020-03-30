@@ -119,6 +119,7 @@ You can remove more than one server's config when post 'removeServers' command.
 
 # TODO
 
+- [ ] set autorun to disable will cause process exit when process is running as a service.
 - [ ] re-generate pac file
 - [ ] osapi on windows
 - [ ] pac whitelist and blacklist
