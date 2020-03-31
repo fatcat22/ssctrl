@@ -171,11 +171,9 @@ func startSSProcess(ssPath, localAddr, localPort string, srvCfg config.ServerCon
 }
 
 func getSSPath() (string, error) {
-	ssName := "shadowsocks2"
-	if runtime.GOOS == "darwin" {
-		ssName = "shadowsocks2-macos"
-	} else if runtime.GOOS == "windows" {
-		ssName = "shadowsocks2.exe"
+	ssName := "go-shadowsocks2"
+	if runtime.GOOS == "windows" {
+		ssName = "go-shadowsocks2.exe"
 	}
 
 	exePath, err := common.ExeFile()
